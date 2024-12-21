@@ -9,6 +9,9 @@
 }
 
 #root {
+  display: flex;
+  aligin-items: center;
+  justify-content: center;
   weight: 100vw;
   height: 100vh;
 }
