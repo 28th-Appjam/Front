@@ -1,14 +1,14 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Main from "./pages/main";
 import Login from "./pages/login";
-import My_page from "./pages/my_page";
+import MyPage from "./pages/myPage";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/myPage" element={<My_page />} />
+      <Route path="/myPage" element={<MyPage />} />
     </Routes>
   );
 }
