@@ -1,14 +1,15 @@
-import { useNavigate } from 'react-router-dom'
-import './App.css'
+import { Route, Routes, useNavigate } from "react-router-dom";
+import Main from "./pages/main";
+import Login from "./pages/login";
+import My_page from "./pages/my_page";
 
-function App() {
+export default function App() {
   const navigate = useNavigate();
   return (
-    <div className='container'>
-      <h1>안녕</h1>
-      <button onClick={() => { navigate('/test') }}>테스트로 가기</button>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/myPage" element={<My_page />} />
+    </Routes>
+  );
 }
-
-export default App;
