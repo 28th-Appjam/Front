@@ -18,11 +18,11 @@ export default function Login() {
   };
 
   return (
-    <div className="flex w-full h-full justify-center">
-      <img src={ArimasLogo} />
+    <div className="flex flex-col w-[473px] h-full justify-center items-center">
+      <img src={ArimasLogo} className="w-3/4" />
       <button
         onClick={LoginGoogle}
-        className="flex justify-center w-full max-w-md items-center border border-[#FFBA00] py-6 rounded-2xl"
+        className="flex justify-center w-3/4 items-center border border-[#FFBA00] py-6 rounded-2xl"
       >
         <img src={GoogleLogo} />
         구글로 로그인
