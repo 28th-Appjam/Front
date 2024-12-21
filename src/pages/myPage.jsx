@@ -8,7 +8,7 @@ export default function MyPage() {
   const Logout = async () => {
     try {
       await signOut(auth);
-      navigate('/login');
+      navigate('/');
     } catch(error) {
       console.error("로그아웃 중 에러 발생", error);
     }
