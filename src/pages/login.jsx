@@ -18,15 +18,17 @@ export default function Login() {
   };
 
   return (
-    <div className="flex flex-col w-[473px] h-full justify-center items-center">
-      <img src={ArimasLogo} className="w-3/4" />
-      <button
-        onClick={LoginGoogle}
-        className="flex justify-center w-3/4 items-center border border-[#FFBA00] py-6 rounded-2xl"
-      >
-        <img src={GoogleLogo} />
-        구글로 로그인
-      </button>
+    <div className="flex flex-col w-[473px] h-full items-center bg-white px-6 py-20">
+      <div className="flex flex-col w-full justify-between items-center h-3/5">
+        <img src={ArimasLogo} className="w-1/2 h-16" />
+        <button
+          onClick={LoginGoogle}
+          className="flex justify-center gap-2 w-full h-20 items-center border border-[#FFBA00] py-6 rounded-2xl"
+        >
+          <img src={GoogleLogo} />
+          <p className="font-medium text-xl">구글로 로그인</p>
+        </button>
+      </div>
     </div>
   );
 }
