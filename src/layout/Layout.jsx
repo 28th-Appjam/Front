@@ -6,10 +6,7 @@ import Profile from "../../public/profile.svg";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex flex-col relative w-[473px] h-full items-center bg-gray-500">
-      <header className="absolute w-full bg-yellow-100">
-        <h1>공통 헤더</h1>
-      </header>
+    <div className="flex flex-col relative w-[473px] h-full items-center bg-white">
       <main className="flex-1 w-full">
         <Outlet />
       </main>
